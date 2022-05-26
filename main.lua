@@ -11,13 +11,5 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-Tab1:AddToggle({
-    Name = "Toggle",
-    Default = true,
-    Save = true,
-    Flag = "toggle"
-})
-
-print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
 OrionLib:Init()
 
