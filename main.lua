@@ -6,8 +6,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 OrionLib:MakeNotification({
-	Name = "Testing!
-	Content = "Testing Purposes... Magixxz#3038"
+	Name = "Testing!",
+	Content = "Testing Purposes... Magixxz#3038",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
