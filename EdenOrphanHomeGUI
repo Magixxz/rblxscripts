@@ -17,7 +17,7 @@ local Section = Tab:NewSection("Main Features")
 Section:NewButton("Infinite Yield FE Admin", "Infinite Yield", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-Section:NewButton("Anti-Afk", "Disables AFK", function()
+Section:NewButton("Anti-AFK", "Disables AFK", function()
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -35,6 +35,16 @@ Section:NewButton("Add Hunger", "Fills you up! Yum!", function()
 
 game:GetService("ReplicatedStorage").Game.EVENT_MAIN:FireServer(unpack(args))
 end)
+Section:NewButton("Grab Berries", "Grabs Berries! Yum!", function()
+local args = {
+    [1] = "BerryBush",
+    [2] = workspace:FindFirstChild("Strange Red Berries")
+}
+
+game:GetService("ReplicatedStorage").Game.EVENT_MAIN:FireServer(unpack(args))
+end)
+
+
 
 local Tab = Window:NewTab("Teleports")
 local Section = Tab:NewSection("Teleports")
