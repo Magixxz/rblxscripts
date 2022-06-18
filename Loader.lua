@@ -1,7 +1,7 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
  Title = "Embotic Script Hub",
- Text = "Script Loading",
+ Text = "Loading...",
 Duration = 5;
 }) 
 if not game:IsLoaded() then
