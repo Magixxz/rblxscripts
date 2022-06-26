@@ -14,6 +14,13 @@ CoreGui:SetCore("SendNotification", {
 Duration = 5;
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Magixxz/rblxscripts/main/EraofEncantoGUI.lua"))()
+if game.PlaceId == 6755746130 then
+CoreGui:SetCore("SendNotification", {
+ Title = "Fruit Juice Tycoon GUI",
+ Text = "Script Loading",
+Duration = 5;
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Magixxz/rblxscripts/main/FruitJuiceTycoonGUI.lua"))()
 else
     CoreGui:SetCore("SendNotification", {
  Title = "Game not supported!",
