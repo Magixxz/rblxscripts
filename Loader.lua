@@ -14,7 +14,6 @@ CoreGui:SetCore("SendNotification", {
  Text = "Script Loading",
 Duration = 5;
 })
-end
 elseif game.PlaceId == 6755746130 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Magixxz/rblxscripts/main/FruitJuiceTycoonGUI.lua"))()
 CoreGui:SetCore("SendNotification", {
