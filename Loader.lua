@@ -1,3 +1,18 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local magixxz = library.new("Embotic Script Hub", 5012544386)
+local themes = {
+	Background = Color3.fromRGB(24, 24, 24),
+	Glow = Color3.fromRGB(0, 0, 0),
+	Accent = Color3.fromRGB(10, 10, 10),
+	LightContrast = Color3.fromRGB(20, 20, 20),
+	DarkContrast = Color3.fromRGB(14, 14, 14),  
+	TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+_G.Key = "emboticscripttest"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
  Title = "Embotic Script Hub",
@@ -28,3 +43,30 @@ else
 Duration = 5;
 })
 end
+
+end
+
+
+-- first page
+local page = magixxz:addPage("Key", 5012540623)
+local section1 = page:addSection("Embotic Key System")
+section1:addTextbox("Enter Key", "Key", function(Value)	
+ _G.KeyInput = Value
+end)
+section1:addButton("Check Key", function()
+if _G.KeyInput == _G.Key then
+    MakeScriptHub()
+    magixxz:toggle()
+else 
+magixxz:Notify("Incorrect Key", "The key was incorrect.")
+end
+end)
+section1:addButton("Copy Key Link", function()
+
+end)
+local page = magixxz:addPage("Credits", 5012544693)
+local section1 = page:addSection("Owner")
+local section2 = page:addSection("Co-Owner")
+section1:addButton("Magixxz#3038")
+section2:addButton("Dedshoxts")
+
